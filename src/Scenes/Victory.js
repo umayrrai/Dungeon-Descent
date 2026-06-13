@@ -33,6 +33,11 @@ class Victory extends Phaser.Scene {
             fontSize: "10px", fill: "#ffffff"
         }).setOrigin(0.5);
 
+        // Credits
+        this.add.text(240, 300, "Created by Umayr Rai", {
+            fontSize: "8px", fill: "#555555"
+        }).setOrigin(0.5);
+
         // Restart the game from Level 1 when R is pressed
         this.input.keyboard.once("keydown-R", () => {
             this.scene.start("Level1");
